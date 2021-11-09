@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+
+import {Button, Textarea, Input } from './components/Form'
+import Card from './components/Card/Card';
+import Menu from './components/Menu/Menu';
+import Employee from './components/Employee/Employee';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <Button bgColor="alizarin" color="carrot">Co tam</Button>
+      </div>
+      <div>
+      <Input bgColor="clouds" color="carrot" borderSize={3} borderRadius={10} borderColor="midnightBlue"/>
+      </div>
+      <div>
+        <Textarea bgColor="clouds" color="carrot" borderSize={3} borderRadius={10} borderColor="peterRiver"/>
+      </div>
+      <p>Zadanie z Card</p>
+
+      <Card/>
+
+      <p>Zadanie z Menu</p><br/>
+
+      <Menu/>
+
+      <p>Zadanie z Employees</p><br/>
+
+      <Employee/>
     </div>
   );
 }
